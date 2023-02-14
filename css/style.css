@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Orbitron", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  height: 100vh;
+}
+
+h1 {
+  color: rgb(0, 102, 255);
+  font-size: 2rem;
+}
+
+h1 span {
+  color: rgb(255, 187, 0);
+}
+
+.timer {
+  display: flex;
+  font-size: 55px;
+  font-weight: 500;
+  color: #222;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  min-width: 90px;
+}
+
+.separator {
+  color: rgb(0, 102, 255);
+}
+
+#milliseconds {
+  color: #444;
+  font-size: 30px;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: none;
+  outline: 1px solid rgb(0, 102, 255);
+  background: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: rgb(0, 102, 255);
+  color: white;
+}
+
+#pauseBtn,
+#resumeBtn,
+#resetBtn {
+  display: none;
+}
+
+#toggle-theme {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  width: 52px;
+  height: 32px;
+  border-radius: 20px;
+  border: none;
+  outline: 1px solid rgb(0, 102, 255);
+  background: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+#toggle-theme:hover {
+  background: rgb(0, 102, 255);
+  color: white;
+}
+
+.dark {
+  background: #212121;
+  color: white;
+}
